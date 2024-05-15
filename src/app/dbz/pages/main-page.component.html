@@ -4,10 +4,13 @@
 <div class="row">
   <div class="col">
     <!-- ENVIAR []-->
-    <dbz-list [CharacterList]="character"></dbz-list>
+    <dbz-list
+      [CharacterList]="characters"
+      (onDelete)="onDeleteCharacter($event)">
+    </dbz-list>
   </div>
   <div class="col">
     <!-- RECIBIR () -->
-    <dbz-add-character (onNewCharacter)="newCharacter($event)"></dbz-add-character>
+    <dbz-add-character (onNew)="onNewCharacter($event)"></dbz-add-character>
   </div>
 </div>
