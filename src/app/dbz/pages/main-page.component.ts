@@ -24,5 +24,8 @@ export class MainComponent{
 ];
 
 
-
+  newCharacter(character: Character): void{
+    console.log('Main Page');
+    console.log(character)
+  }
 }
